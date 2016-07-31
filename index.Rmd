@@ -1,0 +1,174 @@
+---
+title       : ShowR
+subtitle    : A história da estória
+author      : João B. G. Brito
+job         : SINAPE - 2016
+framework   : io2012        
+highlighter : highlight.js  
+hitheme     : tomorrow      
+widgets     : [mathjax, quiz, bootstrap, interactive, mathjax]
+ext_widgets : {rCharts: [libraries/nvd3, libraries/leaflet, libraries/dygraphs]}
+mode        : selfcontained 
+knit        : slidify::knit2slides
+logo        : logo_USERS.png
+biglogo     : logo_ShowR.png
+assets      : {assets: ../../assets}
+--- .segue bg:black
+
+# Em 1960, na ilha de Borneo...
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
+library(knitr); library(dplyr); library(htmlwidgets); 
+source("html_widgets.R")
+read_chunk('html_widgets.R')
+```
+
+--- .class #id
+
+## O povo Dayak 
+
+```{r, 'borneo', echo=FALSE, warning=FALSE, cache=FALSE, results='asis'}
+cat('<iframe src="./assets/widgets/borneo.html" width=100% height=100% allowtransparency="true"> </iframe>')
+```
+
+--- .class #id
+
+## Monitorava o plantio
+
+<iframe src="./assets/widgets/dt1.html" width=100% height=100% allowtransparency="true"> </iframe>
+
+--- .class #id
+
+## Vivia feliz com o lucro das bananas
+
+<div align="center">
+
+  ```{r, results = 'asis', echo=FALSE, warning=FALSE, message=FALSE, fig.align='center', cache=FALSE}
+  require(googleVis)
+  fruta <- read.csv(file = ".//assets//database//frutas.csv")
+  fruta <- as.data.frame(fruta)
+  M1 <- gvisMotionChart(fruta, idvar = 'Fruta', timevar = 'Ano')
+  print(M1, tag = 'chart')
+  
+  ```
+</div>
+
+--- .segue bg:black
+
+## Entaum...
+
+--- &checkbox
+
+## As pessoas estavam adoecendo...
+
+1. _Febre_
+2. _Dores_
+3. _Muitos mosquitos_
+
+*** .hint
+
+Malaria!!
+
+*** .explanation
+
+<img class=center
+src=assets/img/ciclo_malaria.png> 
+
+--- .class #id
+
+## Pediram ajuda
+
+<img class=center
+  src=assets/img/DayakToWHO_1.png width=750px>
+
+> - Problema resolvido!! 
+
+--- .segue bg:black
+
+## Soh que naum...
+
+---  &checkbox
+
+## Outros problemas apareceram
+
+1. _Cai telhado_
+2. _Morrem peixes_
+3. _Peste-negra_
+
+---  &multitext
+
+## O que fazer?
+
+1. Quem vai nos ajudar?
+
+*** .explanation
+
+1. <span class='answer'>"Ligar para OMS"</span>
+
+--- .class #id
+
+## A OMS analisou o caso
+
+```{r, 'dygraphs2', echo=FALSE, warning=FALSE,cache=FALSE,results='asis'}
+cat('<iframe src="./assets/widgets/dygraphs2.html" width=100% height=100% allowtransparency="true"> </iframe>')
+```
+
+--- .class #id
+
+## Verificou o aumento da temperatura
+
+```{r, 'threejs1', echo=FALSE, warning=FALSE,cache=FALSE,results='asis'}
+cat('<iframe src="./assets/widgets/threejs1.html" width=100% height=100% allowtransparency="true"> </iframe>')
+```
+
+--- .class #id
+
+## Apurou outros elementos
+
+```{r, 'threejs2', echo=FALSE, warning=FALSE,cache=FALSE,results='asis'}
+cat('<iframe src="./assets/widgets/threejs2.html" width=100% height=100% allowtransparency="true"> </iframe>')
+```
+
+--- .class #id
+
+## Impacto na cadeia ambiental
+
+```{r, 'networkD31', echo=FALSE, warning=FALSE,cache=FALSE,results='asis'}
+
+cat('<iframe src="./assets/widgets/networkD31.html" width=200% height=200% allowtransparency="true"> </iframe>')
+
+```
+
+--- .class #id
+
+## Cadeia de eventos
+
+<img class=center
+src=assets/img/cadeia.gif> 
+
+--- .class #id
+
+## Operation Cat Drop
+
+<img class=center
+src=assets/img/OperationCatDrop.png width=80% height=80%> 
+
+--- .class #id
+
+## 14 mil gatos do mundo todo
+
+```{r, 'globo', echo=FALSE, warning=FALSE, cache=FALSE, results='asis'}
+cat('<iframe src="./assets/widgets/globe.html" width=100% height=100% allowtransparency="true"> </iframe>')
+```
+
+--- .segue bg:black
+
+# E agora
+
+--- .class #id
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSefoxiOgxnek6KEQUd4rg3MhtWK9ZB707EypLJheZlITK9VCQ/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Carregando.</iframe>
+
+--- 
+
+<iframe src="https://www.google.com/maps/d/embed?mid=14Pr8dZTPeVxEISrHUDrT6xP61UM" width="640" height="480"></iframe>
