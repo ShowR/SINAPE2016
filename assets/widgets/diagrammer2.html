@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<script src="diagrammer2_files/htmlwidgets-0.6/htmlwidgets.js"></script>
+<script src="diagrammer2_files/viz-0.3/viz.js"></script>
+<link href="diagrammer2_files/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+<script src="diagrammer2_files/grViz-binding-0.8.4/grViz.js"></script>
+
+</head>
+<body style="background-color:white;">
+<div id="htmlwidget_container">
+  <div id="htmlwidget-9720" style="width:700px;height:400px;" class="grViz html-widget"></div>
+</div>
+<script type="application/json" data-for="htmlwidget-9720">{"x":{"diagram":"\ndigraph boxes_and_circles {\n\n# several \"node\" statements\nnode [shape = box,\nfontname = Helvetica]\nA; B; C; D; E; F\n\nnode [shape = circle,\nfixedsize = true,\nwidth = 0.9] // sets as circles\n1; 2; 3; 4; 5; 6; 7; 8\n\n# several \"edge\" statements\nA->1; B->2; B->3; B->4; C->A\n1->D; E->A; 2->4; 1->5; 1->F\nE->6; 4->6; 5->7; 6->7; 3->8\n\n# a \"graph\" statement\ngraph [overlap = true, fontsize = 10]\n}\n","config":{"engine":"circo","options":null}},"evals":[],"jsHooks":[]}</script>
+<script type="application/htmlwidget-sizing" data-for="htmlwidget-9720">{"viewer":{"width":700,"height":400,"padding":15,"fill":false},"browser":{"width":700,"height":400,"padding":40,"fill":false}}</script>
+</body>
+</html>

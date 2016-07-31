@@ -4,7 +4,7 @@
 
 
 ## Instalando pacotes
-if (!require(slidify)) {
+if (!require(slidify, quietly = TRUE)) {
   
   # Instala os pacotes necessarios para trabalho
   install.packages("needs", dep=T)
@@ -60,14 +60,15 @@ if (!require(slidify)) {
             "bwlewis/rthreejs")
 
   install_github(pkts, force=TRUE)
+  update.packages(ask=FALSE)
   library(slidify)
 }  
 
 # Indica diretorio do projeto
-setwd("j://Projetos//SINAPE2016//")
+setwd("c://Projetos//SINAPE2016//")
 
 # Monta apresentacao
-slidify('index.Rmd', )
+slidify('index.Rmd')
 
 # Executa apresentacao
 runDeck()
