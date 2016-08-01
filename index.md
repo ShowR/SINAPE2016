@@ -1,7 +1,7 @@
 ---
 title       : ShowR
 subtitle    : A história da estória
-author      : João B. G. Brito
+author      : João B. G. Brito - jbgb@uol.com.br
 job         : SINAPE 2016
 framework   : io2012        
 highlighter : highlight.js  
@@ -42,14 +42,14 @@ license     : UseRS
 <div align="center">
 
   <!-- MotionChart generated in R 3.3.0 by googleVis 0.6.0 package -->
-  <!-- Sun Jul 31 22:02:23 2016 -->
+  <!-- Mon Aug 01 12:37:51 2016 -->
   
   
   <!-- jsHeader -->
   <script type="text/javascript">
    
   // jsData 
-  function gvisDataMotionChartID8b064e81812 () {
+  function gvisDataMotionChartIDa8c646b3fde () {
   var data = new google.visualization.DataTable();
   var datajson =
   [
@@ -137,15 +137,15 @@ license     : UseRS
   }
    
   // jsDrawChart
-  function drawChartMotionChartID8b064e81812() {
-  var data = gvisDataMotionChartID8b064e81812();
+  function drawChartMotionChartIDa8c646b3fde() {
+  var data = gvisDataMotionChartIDa8c646b3fde();
   var options = {};
   options["width"] = [600];
   options["height"] = [500];
   options["state"] = [""];
   
       var chart = new google.visualization.MotionChart(
-      document.getElementById('MotionChartID8b064e81812')
+      document.getElementById('MotionChartIDa8c646b3fde')
       );
       chart.draw(data,options);
       
@@ -169,9 +169,9 @@ license     : UseRS
     pkgs.push(chartid);
     
   // Add the drawChart function to the global list of callbacks
-  callbacks.push(drawChartMotionChartID8b064e81812);
+  callbacks.push(drawChartMotionChartIDa8c646b3fde);
   })();
-  function displayChartMotionChartID8b064e81812() {
+  function displayChartMotionChartIDa8c646b3fde() {
     var pkgs = window.__gvisPackages = window.__gvisPackages || [];
     var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
     window.clearTimeout(window.__gvisLoad);
@@ -195,11 +195,11 @@ license     : UseRS
   </script>
    
   <!-- jsChart -->  
-  <script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID8b064e81812"></script>
+  <script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartIDa8c646b3fde"></script>
    
   <!-- divChart -->
     
-  <div id="MotionChartID8b064e81812" 
+  <div id="MotionChartIDa8c646b3fde" 
     style="width: 600; height: 500;">
   </div>
 </div>
